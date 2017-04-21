@@ -1,0 +1,134 @@
+@charset "utf-8";
+body{
+	margin:0px;
+	height:3470px;
+}
+.daohang{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:60px;
+	background: rgb(51,51,51);
+	right:0px;
+}
+.daohang .box{
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+.daohang ul li{
+	margin:10px;
+	float: left;
+	
+}
+
+.bigbox{
+	background-color:rgb(255,255,255);
+	border:14px solid rgb(255,255,255);
+	padding:1cm 0.5cm;
+	width:93.5%;
+	height:490px;
+	box-shadow: 2px 3px 4px rgb(171,171,171);
+	position:relative;
+	top:20px;
+	left:0px;
+	right:0px;
+	margin:16px;
+}
+.bigbox p{
+	font-weight:700;
+}
+.bigbox a{
+	font-weight:700;
+}
+.bigbox ul li{
+	font-weight:700;
+}
+.bigbox .tablebox{
+	width:100%;
+	height:40%;
+	border-collapse:collapse;
+	border-color:rgb(171,171,171) rgb(171,171,171);
+	font-weight:700;
+}
+[title=one]{
+	background:black;
+	color:white;
+}
+[title=six]{
+	background:rgb(171,171,171);
+}
+
+.picturebox{
+	position:relative;
+	top:22px;
+	background-color:rgb(255,255,255);
+	border:14px solid rgb(255,255,255);
+	width:96%;
+	height:885px;
+	box-shadow:2px 3px 4px rgb(171,171,171);
+	margin:16px;
+}
+.largebox{
+	position:relative;
+	top:-26px;
+	background-color:rgb(222,222,222);
+	height:3390px;
+}
+#sidebox{
+	border-left:2px solid rgb(171,171,171);
+	position:relative;
+	left:19px;
+	padding-left:10px;
+	box-shadow:-4px 0px 0px rgb(222,222,222);
+}
+.textbox table{
+
+}
+[title=two]{
+	color:rgb(171,171,171);
+}
+.boxfive{
+	height:75px;
+	width:50%;
+	position:relative;
+	left:611px;
+	top:25px;
+}
+[title=seven]{
+	position:relative;
+	top:-35px;
+	left:545px;
+}
+#submited{
+	position:relative;
+	top:50px;
+	left:18px;
+	width:95%;
+	height:40px;
+	background:rgb(51,85,201);
+	box-shadow:0px 0px 0px 2px rgb(171,171,171);
+	border-radius:7px;
+	text-align:center;
+}
+#submited .subtext{
+	margin-top:9px;
+	background:rgb(51,85,201);
+	color:rgb(255,255,255);
+	border:none;
+}
+#production{
+	height:50px;
+	width:100%;
+	background: rgb(0,0,0);
+	color:rgb(255,255,255);
+	position:relative;
+	top:-51px;
+}
+#production div{
+	text-align:center;
+	position:relative;
+	top:10px;
+}
+	/* CSS Document */
