@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>welcome to my blog</title>
+<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<style>
+body{
+	background:url(picture/123456.jpg);
+}
+#sensor{
+	background:url(picture/beautiful.jpg);
+}
+#production div{
+	text-align:center;
+	position:relative;
+	top:10px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column" style="background:rgb(255,255,255);">
+			<div class="jumbotron show" id="sensor">
+            <h2>个人博客</h2>
+				<blockquote>
+                	<p>
+                    	梦想没有捷径，勤奋方能铸就成功。
+                    </p>
+                    <small>自己瞎编的</small>
+                </blockquote>
+			</div>
+			<div class="row clearfix">
+				<div class="col-md-4 column">
+					<div class="jumbotron">
+						<h3>
+							个人资料
+						</h3>
+                         <div class="col-sm-4 col-md-6">
+                            <div class="thumbnail">
+                            <img src="picture/me.jpg" />
+                            </div>
+                            <div class="caption">
+                            	<h3>王江</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                        </div>
+                        <h4>职业</h4>学生
+                        <h4>个人简介</h4>
+						<p>
+							一个正在路上的前端初学者。。。
+						</p>
+						
+						
+					</div>
+				</div>
+				<div class="col-md-8 column">
+					<nav class="navbar navbar-default" role="navigation">
+						<div class="navbar-header">
+							 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#"></a>
+						</div>
+						
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="active">
+									 <a href="myblog.html">主页</a>
+								</li>
+								<li>
+									 <a href="picture.html">图片</a>
+								</li>
+								<li><a href="lianxi.html">联系我</a></li>
+							</ul>
+							<form class="navbar-form navbar-left" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" />
+								</div> <button type="submit" class="btn btn-default">搜索</button>
+							</form>
+							<ul class="nav navbar-nav navbar-right">
+								<li class="dropdown">
+									 <a href="#" class="dropdown-toggle" data-toggle="dropdown">换肤<strong class="caret"></strong></a>
+									<ul class="dropdown-menu">
+										<li>
+											 <a href="#" id="bgp1">皮肤1</a>
+										</li>
+										<li>
+											 <a href="#" id="bgp2">皮肤2</a>
+										</li>
+										<li>
+											 <a href="#" id="bgp3">皮肤3</a>
+										</li>
+										<li class="divider">
+										</li>
+										<li>
+											 <a href="ziding.html">自定义</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						
+					</nav>
+                    <div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								CSS实现块级元素居于页面之中
+							</h3>
+						</div>
+						<div class="panel-body">
+							<P>除了使用定位的方法实现元素居中之外这里主要介绍其他几种方法：</P>
+                            <li>水平居中</li>
+                            <p>若是文本内容居中则可以在其父元素设置text-alagin:center;若是块级元素则可以设置margin-left:auto; margin-right-auto;
+                            也可以写成margin:0 auto 0 auto;
+                            <p>
+                            <li>垂直居中</li>
+                            <p>
+                            1.对于文字,可以用增高行距的办法变通实现垂直居中，示范代码如下：
+<pre>
+#center{ 
+        margin-right: auto;
+        margin-left: auto;
+        height:200px;  
+        vertical-align:middle;  
+        line-height:200px;
+        }
+&lt;div id=”center”&gt;&lt;p&gt;test content&lt;/p&gt;&lt;/div&gt;
+</pre>
+								说明：
+								vertical-align:middle;表示行内垂直居中，我们将行距增加到和整个DIV一样高line-height:200px;然后插入文字，就垂直居中了。
+						
+							</p>
+                            <p>
+                           2. 对于图片垂直居中我们可以使用设置背景图片的方法。举例：
+<pre>
+body{
+background:url(”sample.gif”) #FFF no-repeat center;
+}
+</pre>
+关键就在于这个Center属性，它表示让该背景图片在容器中居中。你也可以把Center换成Top Left或者直接写上数字来调整它的位置。
+                            </p>
+                            <li>既水平居中又垂直居中或者叫完全居中</li>
+                            <p>代码如下：</p>
+<pre>
+perfact_center{
+postion:absolute;
+margin:auto;
+top:0;
+right:0;
+left:0;
+bottom:0;
+}
+</pre>
+                            <p>
+                            前提是需声明块级元素的高度，优点是可以随着浏览器的宽度变化和高度变化而完全居中，兼容性好，可适应IE（8+），图片元素也可以应用。注意不适应Windows Phone
+                            </p>
+                            <strong>若想了解更多CSS居中方法可以点击这个网址<a href="http://blog.jobbole.com/46574/">http://blog.jobbole.com/46574/</a>上面有更多CSS居中方法。</strong>
+						</div>
+                        <div class="panel-body center-block text-center">
+                        <div style="margin-left:260px;">
+                         <div style=" width:100px; height:100px; float:left;"><a style="font-size:36px; cursor:pointer;color:rgb(255,255,255)" id="ding"><button class="btn btn-primary" data-toggle="modal" data-target="#myModal">顶</button></a><br><p id="ding1">99</p></div><div style=" cursor:pointer;height:100px; width:100px; float:left; margin-left:10px;" id="cai"><a style="font-size:36px; color:rgb(255,255,255)"><button class="btn btn-danger" data-toggle="modal" data-target="#myModal1">踩</button></a><br><p id="cai1">0</p></div>						
+                         </div>
+                        </div>
+                        <!--模态框-->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dailog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        	<div class="modal-dialog">
+                            	<div class="modal-content">
+                                	<div class="modal-header">
+                                    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="myModalLabel">赞！</h4>
+                                    </div>
+                                    <div class="modal-body thumbnail">
+                                    	<img src="picture/nvshen.jpeg">
+                                    </div>
+                                    <div class="modal-footer">
+                                    	<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--模态框1-->
+                        <div class="modal fade" id="myModal1" tabindex"-1" role="dailog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                        	<div class="modal-dialog">
+                            	<div class="modal-content">
+                                	<div class="modal-header">
+                                    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title" id="myModalLabel1">踩</h4>
+                                    </div>
+                                    <div class="modal-body thumbnail">
+                                    	<img src="picture/beishang.jpeg">
+                                    </div>
+                                    <div class="modal-footer">
+                                    	<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                        <button class=" btn btn-default btn-link btn-lg">
+                        <a href="#">上一篇</a>
+                        </button>
+                        </div>
+                         <div class="panel-body">
+                        <button class="btn btn-default btn-link btn-lg">
+                        <a href="#">下一篇</a>
+                        </button>
+                        </div>
+                        </div>
+                        <div class="panel panel-default">
+                        	<div class="panel-heading">
+                            	<h3 class="panel-title">评论：</h3>
+                            </div>
+                            <div class="panel-body">
+                            	<form role="form">
+                                	<textarea class="form-control" rows="3" >
+            请输入您的想法....然而这并没有什么卵用，你输入了我也看不到，因为这只是一个没有后台的静态页面.
+                                    </textarea>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                        	<div class="panel-heading">
+                            	<h4>查看评论：</h4>
+                            </div>
+                            <div class="panel-body">
+                            	<div class="media">
+                                	<a class="pull-left" href="#">
+                                    	<img class="media-object" src="picture/t010b9f467025472cea.jpg" alt="媒体对象">
+                                    </a>
+                                    <div class="media-body">
+                                    	<h4><a href="#">马云</a></h4>
+                                        <p>这篇文章写的很不错，小伙子我看好你。。。。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="production">
+    <div>
+		<h5>版权所有@lalalala</h5>
+    </div>
+</div>
+<script src="js/bgp.js"></script>
+</body>
+</html>
